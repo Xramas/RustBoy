@@ -59,10 +59,6 @@ include: null
 exclude: null
 ignore: null
 theme: icarus
-deploy:
-  type: git
-  repo: https://github.com/Xramas/RustBoy.git
-  branch: gh-pages
 
 # SEO
 sitemap:
