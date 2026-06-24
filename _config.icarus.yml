@@ -228,22 +228,22 @@ widgets:
 
     # 分类小部件
     -
-        position: left
+        position: right
         type: categories
 
     # 最近文章小部件
     -
-        position: left
+        position: right
         type: recent_posts
 
     # 归档小部件
     -
-        position: left
+        position: right
         type: archives
 
     # 标签小部件
     -
-        position: left
+        position: right
         type: tags
         # 排序方式：name（按名称升序）/ -length（按文章数降序）
         order_by: name
