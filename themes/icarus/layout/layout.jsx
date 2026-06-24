@@ -27,7 +27,7 @@ module.exports = class extends Component {
                                 'column-main': true,
                                 'is-12': columnCount === 1,
                                 'is-8-tablet is-8-desktop is-8-widescreen': columnCount === 2,
-                                'is-8-tablet is-8-desktop is-6-widescreen': columnCount === 3
+                                'is-8-tablet is-8-desktop is-7-widescreen': columnCount === 3
                             })}>
                                 <main dangerouslySetInnerHTML={{ __html: body }}></main>
                             </div>
