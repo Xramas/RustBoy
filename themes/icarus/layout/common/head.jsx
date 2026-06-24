@@ -85,14 +85,6 @@ module.exports = class extends Component {
             images = [url_for('/img/og_image.png')];
         }
 
-        let adsenseClientId = null;
-        if (Array.isArray(config.widgets)) {
-            const widget = config.widgets.find(widget => widget.type === 'adsense');
-            if (widget) {
-                adsenseClientId = widget.client_id;
-            }
-        }
-
         let openGraphImages = images;
         if ((typeof open_graph === 'object' && open_graph !== null)
             && ((Array.isArray(open_graph.image) && open_graph.image.length > 0) || typeof open_graph.image === 'string')) {
@@ -107,14 +99,6 @@ module.exports = class extends Component {
             structuredImages = structured_data.image;
         } else if ((Array.isArray(page.photos) && page.photos.length > 0) || typeof page.photos === 'string') {
             structuredImages = page.photos;
-        }
-
-        let followItVerificationCode = null;
-        if (Array.isArray(config.widgets)) {
-            const widget = config.widgets.find(widget => widget.type === 'followit');
-            if (widget) {
-                followItVerificationCode = widget.verification_code;
-            }
         }
 
         return <head>
@@ -172,11 +156,6 @@ module.exports = class extends Component {
             <link rel="stylesheet" href={fontCssUrl[variant]} />
             <link data-pjax rel="stylesheet" href={url_for('/css/' + variant + '.css')} />
             <Plugins site={site} config={config} helper={helper} page={page} head={true} />
-
-            {adsenseClientId ? <script data-ad-client={adsenseClientId}
-                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" async></script> : null}
-
-            {followItVerificationCode ? <meta name="follow.it-verification-code" content={followItVerificationCode} /> : null}
         </head>;
     }
 };

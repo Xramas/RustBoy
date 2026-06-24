@@ -33,15 +33,6 @@
             },
             {
                 "$ref": "/widget/tags.json"
-            },
-            {
-                "$ref": "/widget/subscribe_email.json"
-            },
-            {
-                "$ref": "/widget/adsense.json"
-            },
-            {
-                "$ref": "/widget/followit.json"
             }
         ],
         "required": [
