@@ -1,55 +1,4 @@
-/* MiSans - Body / UI font */
-@font-face {
-  font-family: 'MiSans';
-  font-style: normal;
-  font-weight: 200;
-  font-display: swap;
-  src: url(/fonts/MiSans-ExtraLight.woff2) format('woff2');
-}
-@font-face {
-  font-family: 'MiSans';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url(/fonts/MiSans-Light.woff2) format('woff2');
-}
-@font-face {
-  font-family: 'MiSans';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/fonts/MiSans-Regular.woff2) format('woff2');
-}
-@font-face {
-  font-family: 'MiSans';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(/fonts/MiSans-Medium.woff2) format('woff2');
-}
-@font-face {
-  font-family: 'MiSans';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(/fonts/MiSans-Semibold.woff2) format('woff2');
-}
-@font-face {
-  font-family: 'MiSans';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(/fonts/MiSans-Bold.woff2) format('woff2');
-}
-@font-face {
-  font-family: 'MiSans';
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: url(/fonts/MiSans-Heavy.woff2) format('woff2');
-}
-
-/* JetBrainsMono - Code / Monospace font */
+/* JetBrains Mono - Code / Monospace font */
 @font-face {
   font-family: 'JetBrains Mono';
   font-style: normal;
@@ -91,6 +40,20 @@
   font-weight: 500;
   font-display: swap;
   src: url(/fonts/JetBrainsMono-MediumItalic.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/JetBrainsMono-SemiBold.woff2) format('woff2');
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(/fonts/JetBrainsMono-SemiBoldItalic.woff2) format('woff2');
 }
 @font-face {
   font-family: 'JetBrains Mono';
