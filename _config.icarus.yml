@@ -278,11 +278,11 @@ widgets:
         # 友情链接站点列表（名称: URL）
         links:
             Claude: https://claude.ai
-            Cloudflare: https://www.cloudflare.com
+            Cloudflare: https://cloudflare.com
             GitHub: https://github.com
-            Google: https://www.google.com
-            Microsoft: https://www.microsoft.com
-            Xiaomi: https://www.mi.com
+            Google: https://google.com
+            Microsoft: https://microsoft.com
+            Xiaomi: https://mi.com
 
     # 分类小部件
     -
