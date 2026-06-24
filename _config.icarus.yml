@@ -117,7 +117,7 @@ navbar:
 # --------------- 页脚配置 ---------------
 footer:
     # 版权信息文本
-    copyright: '&copy; 2026 RustBoy. All rights reserved.'
+    copyright: '&copy; 2026 <a href="https://rustboy.de">RustBoy</a>. All rights reserved.'
     # 页脚右侧链接
     links:
         Creative Commons:
