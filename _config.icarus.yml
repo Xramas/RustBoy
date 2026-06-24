@@ -271,14 +271,18 @@ widgets:
         # 显示的最大标题层级（1-6）
         depth: 3
 
-    # 推荐链接小部件
+    # 友情链接小部件
     -
         position: left
         type: links
-        # 推荐站点列表（名称: URL）
+        # 友情链接站点列表（名称: URL）
         links:
-            Hexo: https://hexo.io
-            Bulma: https://bulma.io
+            Claude: https://claude.ai
+            Cloudflare: https://www.cloudflare.com
+            GitHub: https://github.com
+            Google: https://www.google.com
+            Microsoft: https://www.microsoft.com
+            Xiaomi: https://www.mi.com
 
     # 分类小部件
     -
