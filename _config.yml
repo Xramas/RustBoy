@@ -1,93 +1,204 @@
+# ============================================================
+# Hexo 主配置文件
+# 文档：https://hexo.io/docs/configuration.html
+# ============================================================
+
+# --------------- 站点基本信息 ---------------
+
+# 站点标题
 title: RustBoy
+# 站点副标题
 subtitle: My RUST Note
+# 站点描述，用于 SEO 和 RSS
 description: 'RustBoy的Rust学习笔记，记录Rust学习过程中的一些知识点和经验分享。'
+# 站点关键词，逗号分隔，用于 SEO
 keywords: Rust, RustBoy, Rust Note, Rust学习笔记
+# 作者名称
 author: RustBoy
+# 站点语言（如 zh-CN、en）
 language: zh-CN
+# 站点时区，留空则使用系统时区
+# 参考：https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone: 'Asia/Shanghai'
+
+# --------------- URL 设置 ---------------
+
+# 站点 URL，必须包含协议（https://）
 url: https://rustboy.de
+# 文章永久链接格式
+# 可用变量：:year/:month/:day/:title/:category/
 permalink: ':title.html'
+# 永久链接中各段的默认值
 permalink_defaults: null
+# 美化 URL 设置
 pretty_urls:
-  trailing_index: true
-  trailing_html: true
+    # 是否在 URL 末尾保留 index.html（false 表示去除）
+    trailing_index: true
+    # 是否在 URL 末尾保留 .html 后缀（false 表示去除）
+    trailing_html: true
+
+# --------------- 目录设置 ---------------
+
+# 源文件目录
 source_dir: source
+# 生成文件输出目录
 public_dir: public
+# 标签页目录
 tag_dir: tags
+# 归档页目录
 archive_dir: archives
+# 分类页目录
 category_dir: categories
+# 代码下载目录
 code_dir: downloads/code
+# 国际化目录
 i18n_dir: ':lang'
+
+# --------------- 写作设置 ---------------
+
+# 跳过渲染的文件路径（支持正则或 glob 表达式）
 skip_render: null
+# 新文章的文件名格式
 new_post_name: ':title.md'
+# 默认文章布局：post（文章）/ page（页面）/ draft（草稿）
 default_layout: post
+# 是否将标题转换为首字母大写
 titlecase: false
+# 外部链接设置
 external_link:
-  enable: true
-  field: site
-  exclude: 'rustboy.de'
+    # 是否在新标签页中打开外部链接
+    enable: true
+    # 检查范围：site（全站）/ post（仅文章）
+    field: site
+    # 排除的域名，不会在新标签页中打开
+    exclude: 'rustboy.de'
+# 文件名大小写转换：0（不变）/ 1（小写）/ 2（大写）
 filename_case: 0
+# 是否渲染草稿
 render_drafts: false
+# 是否启用文章资源文件夹（每篇文章独立的资源目录）
 post_asset_folder: true
+# 是否使用相对链接
 relative_link: false
+# 是否显示未来日期的文章（false 表示隐藏未来日期的文章）
 future: false
+
+# --------------- 代码高亮设置 ---------------
+
+# 代码高亮引擎：highlight.js / prismjs
 syntax_highlighter: highlight.js
+# highlight.js 设置
 highlight:
-  line_number: true
-  auto_detect: true
-  tab_replace: ''
-  wrap: true
-  hljs: false
+    # 是否显示行号
+    line_number: true
+    # 是否自动检测代码语言（未指定语言时生效）
+    auto_detect: true
+    # Tab 替换字符，留空则不替换
+    tab_replace: ''
+    # 是否自动换行
+    wrap: true
+    # 是否启用 hljs 类名模式
+    hljs: false
+# PrismJS 设置（未使用，保留默认值）
 prismjs:
-  preprocess: true
-  line_number: true
-  tab_replace: ''
+    preprocess: true
+    line_number: true
+    tab_replace: ''
+
+# --------------- 首页设置 ---------------
+
+# 首页文章生成器
 index_generator:
-  path: ''
-  per_page: 10
-  order_by: '-date'
+    # 首页路径
+    path: ''
+    # 每页显示文章数
+    per_page: 10
+    # 排序方式（-date 表示按日期降序）
+    order_by: '-date'
+
+# --------------- 分类与标签 ---------------
+
+# 默认分类名称（未指定分类时使用）
 default_category: uncategorized
+# 分类别名映射
 category_map: null
+# 标签别名映射
 tag_map: null
+
+# --------------- 日期与分页 ---------------
+
+# 是否在 HTML 中添加 <meta name="generator"> 标签（false 可隐藏 Hexo 版本信息）
 meta_generator: false
+# 日期格式
 date_format: YYYY-MM-DD
+# 时间格式
 time_format: HH:mm:ss
+# 文章更新时间来源：mtime（文件修改时间）/ date（front-matter 日期）/ empty（不显示）
 updated_option: mtime
+# 每页显示的文章数，0 表示禁用分页
 per_page: 10
+# 分页目录名
 pagination_dir: page
+
+# --------------- 文件过滤 ---------------
+
+# 包含的文件/路径（仅渲染匹配的文件）
 include: null
+# 排除的文件/路径（不渲染匹配的文件）
 exclude: null
+# 忽略的文件/路径（完全跳过）
 ignore: null
+
+# --------------- 主题 ---------------
+
+# 当前使用的主题
 theme: icarus
 
-# SEO
-sitemap:
-  path: sitemap.xml
-feed:
-  enable: true
-  type: atom
-  path: atom.xml
-  limit: 20
+# --------------- SEO 插件 ---------------
 
-# hexo-neat 自动静态资源压缩配置
+# Sitemap 站点地图配置
+# 需要安装：npm install hexo-generator-sitemap
+sitemap:
+    # 生成路径
+    path: sitemap.xml
+
+# RSS/Atom 订阅源配置
+# 需要安装：npm install hexo-generator-feed
+feed:
+    # 是否启用
+    enable: true
+    # 订阅源类型：atom / rss2
+    type: atom
+    # 生成路径
+    path: atom.xml
+    # 最多包含文章数
+    limit: 20
+
+# --------------- hexo-neat 静态资源压缩 ---------------
+
+# 是否启用 hexo-neat 自动压缩
 neat_enable: true
 
-# HTML 压缩
+# HTML 压缩设置
 neat_html:
-  enable: true
-  exclude: []
+    enable: true
+    # 排除的文件模式
+    exclude: []
 
-# CSS 压缩
+# CSS 压缩设置
 neat_css:
-  enable: true
-  exclude:
-    - '**/*.min.css' # 排除本身已经压缩过的第三方 CSS
+    enable: true
+    exclude:
+        # 排除已压缩的第三方 CSS
+        - '**/*.min.css'
 
-# JS 压缩
+# JS 压缩设置
 neat_js:
-  enable: true
-  mangle: true
-  compress: true
-  exclude:
-    - '**/*.min.js'  # 排除已经压缩过的第三方 JS
-
+    enable: true
+    # 是否混淆变量名
+    mangle: true
+    # 是否压缩代码
+    compress: true
+    exclude:
+        # 排除已压缩的第三方 JS
+        - '**/*.min.js'
