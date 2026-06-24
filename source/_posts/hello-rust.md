@@ -1,6 +1,7 @@
 ---
 title: Hello, Rust!
 date: 2026-06-24 10:00:00
+description: RustBoy 博客首篇文章，介绍为什么选择 Rust、博客计划内容以及环境准备和一个简单的 match 示例。
 tags:
   - Rust
   - 入门

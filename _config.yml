@@ -33,9 +33,9 @@ permalink_defaults: null
 # 美化 URL 设置
 pretty_urls:
     # 是否在 URL 末尾保留 index.html（false 表示去除）
-    trailing_index: true
+    trailing_index: false
     # 是否在 URL 末尾保留 .html 后缀（false 表示去除）
-    trailing_html: true
+    trailing_html: false
 
 # --------------- 目录设置 ---------------
 

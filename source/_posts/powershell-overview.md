@@ -1,6 +1,7 @@
 ---
 title: PowerShell 入门概览
 date: 2026-06-24 09:04:00
+description: PowerShell 是基于 .NET 的任务自动化框架，本文介绍对象管道、Cmdlet 命名、流程控制和远程管理，以及跨平台 PowerShell 7+。
 tags:
   - PowerShell
   - Windows

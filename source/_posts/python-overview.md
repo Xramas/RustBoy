@@ -1,6 +1,7 @@
 ---
 title: Python 语言入门概览
 date: 2026-06-24 09:00:00
+description: Python 以简洁和可读性著称，本文介绍动态类型、内存管理、GIL 与并发，以及与 Rust 的对比。
 tags:
   - Python
   - 编程语言

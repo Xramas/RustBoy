@@ -1,6 +1,7 @@
 ---
 title: Shell 脚本入门概览
 date: 2026-06-24 09:03:00
+description: Shell 是 Linux 系统的命令行解释器和脚本语言，本文介绍基础语法、变量、条件判断、循环、函数和实用脚本示例。
 tags:
   - Shell
   - Linux

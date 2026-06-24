@@ -63,12 +63,6 @@ head:
         twitter_id:
         # Twitter 站点 ID（twitter:site）
         twitter_site:
-        # Google+ 个人主页链接（已弃用）
-        google_plus:
-        # Facebook 管理员 ID（fb:admins）
-        fb_admins:
-        # Facebook 应用 ID（fb:app_id）
-        fb_app_id:
 
     # 结构化数据（Schema.org）配置
     # 参考：https://developers.google.com/search/docs/guides/intro-structured-data
@@ -165,58 +159,6 @@ search:
     # 是否在搜索结果中包含页面
     index_pages: true
 
-# --------------- 评论插件配置 ---------------
-# 参考：https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
-comment:
-    # 评论系统类型：disqus / changyan / gitalk / livere / valine
-    type: disqus
-    # Disqus 站点简称（需要填写才能启用）
-    shortname: ''
-
-# --------------- 打赏插件配置 ---------------
-# 参考：https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
-donates:
-    # 爱发电打赏按钮
-    -
-        type: afdian
-        # 爱发电个人页面 URL
-        url: ''
-    # 支付宝打赏按钮
-    -
-        type: alipay
-        # 支付宝收款二维码图片 URL
-        qrcode: ''
-    # "Buy me a coffee" 打赏按钮
-    -
-        type: buymeacoffee
-        # "Buy me a coffee" 页面 URL
-        url: ''
-    # Patreon 打赏按钮
-    -
-        type: patreon
-        # Patreon 页面 URL
-        url: ''
-    # PayPal 打赏按钮
-    -
-        type: paypal
-        # PayPal 商户 ID 或邮箱地址
-        business: ''
-        # 货币代码（如 USD、EUR）
-        currency_code: USD
-    # 微信打赏按钮
-    -
-        type: wechat
-        # 微信收款二维码图片 URL
-        qrcode: ''
-
-# --------------- 分享插件配置 ---------------
-# 参考：https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share/
-share:
-    # 分享服务类型：sharethis / addtoany
-    type: sharethis
-    # ShareThis 分享插件脚本 URL（需要填写才能启用）
-    install_url: ''
-
 # --------------- 侧边栏配置 ---------------
 # 注意：侧边栏仅在包含至少一个小部件时才可见
 sidebar:
@@ -244,7 +186,7 @@ widgets:
         # 作者所在地
         location: ''
         # 头像图片的路径或 URL
-        avatar:
+        avatar: /img/avatar.png
         # 是否显示圆形头像
         avatar_rounded: true
         # Gravatar 邮箱地址（与头像二选一）
@@ -318,29 +260,9 @@ plugins:
     # 是否显示"返回顶部"按钮
     back_to_top: true
 
-    # 百度统计配置
-    # 参考：https://tongji.baidu.com
-    baidu_analytics:
-        # 百度统计跟踪 ID
-        tracking_id:
-
-    # Bing 站长工具配置
-    # 参考：https://www.bing.com/toolbox/webmaster/
-    bing_webmaster:
-        # Bing 站长工具验证 meta 标签中的 tracking ID
-        tracking_id:
-
     # 不蒜子网站/页面访问计数器
     # 参考：https://busuanzi.ibruce.info
     busuanzi: false
-
-    # CNZZ 统计配置
-    # 参考：https://www.umeng.com/web
-    cnzz:
-        # CNZZ 跟踪器 ID
-        id:
-        # CNZZ 网站 ID
-        web_id:
 
     # Cookie 同意提示配置
     # 参考：https://www.osano.com/cookieconsent/
@@ -359,18 +281,6 @@ plugins:
     # 是否启用 lightGallery 图片画廊和 Justified Gallery
     gallery: true
 
-    # Google Analytics 配置
-    # 参考：https://analytics.google.com
-    google_analytics:
-        # Google Analytics 跟踪 ID
-        tracking_id:
-
-    # Hotjar 用户行为分析配置
-    # 参考：https://www.hotjar.com/
-    hotjar:
-        # Hotjar 站点 ID
-        site_id:
-
     # 是否启用 KaTeX 数学公式排版
     # 参考：https://katex.org/
     katex: false
@@ -388,20 +298,6 @@ plugins:
 
     # 是否在页面顶部显示加载进度条
     progressbar: true
-
-    # Statcounter 统计配置
-    # 参考：https://statcounter.com/
-    statcounter:
-        # Statcounter 项目 ID
-        project:
-        # Statcounter 项目安全码
-        security:
-
-    # Twitter 转化跟踪配置
-    # 参考：https://business.twitter.com/en/help/campaign-measurement-and-analytics/conversion-tracking-for-websites.html
-    twitter_conversion_tracking:
-        # Twitter Pixel ID
-        pixel_id:
 
 # --------------- CDN 资源路径配置 ---------------
 # 参考：https://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/speed-up-your-site-with-custom-cdn/
