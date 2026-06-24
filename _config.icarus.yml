@@ -23,22 +23,22 @@ head:
         # 空间不足时显示的简短名称
         short_name: RustBoy
         # 应用启动 URL
-        start_url:
+        start_url: /
         # 应用默认主题颜色
-        theme_color:
+        theme_color: '#24292e'
         # 样式表加载前的占位背景色
-        background_color:
+        background_color: '#ffffff'
         # 显示模式：standalone / fullscreen / minimal-ui / browser
         display: standalone
         # 应用图标列表
         icons:
             -
                 # 图标文件路径
-                src: ''
+                src: /img/favicon.png
                 # 图标尺寸，空格分隔的宽高（如 "192x192"）
-                sizes: ''
+                sizes: '64x64'
                 # 图标的 MIME 类型（如 "image/png"）
-                type:
+                type: image/png
 
     # Open Graph 社交分享元数据
     # 参考：https://hexo.io/docs/helpers.html#open-graph
