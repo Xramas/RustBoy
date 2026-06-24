@@ -98,9 +98,9 @@ head:
     meta:
         # Meta tag specified in <attribute>=<value> style
         # E.g., name=theme-color;content=#123456 => <meta name="theme-color" content="#123456">
-        - ''
+        - name=theme-color;content=#263238
     # URL or path to the website's RSS atom.xml
-    rss: 
+    rss: /atom.xml
 # Page top navigation bar configurations
 navbar:
     # Navigation menu items
@@ -112,13 +112,13 @@ navbar:
         关于: /about
     # Links to be shown on the right of the navigation bar
     links:
-        Download on GitHub:
+        Blog Source:
             icon: fab fa-github
-            url: https://github.com/ppoffice/hexo-theme-icarus
+            url: https://github.com/Xramas/RustBoy
 # Page footer configurations
 footer:
     # Copyright text
-    copyright: © 2019
+    copyright: © 2026 RustBoy
     # Links to be shown on the right of the footer section
     links:
         Creative Commons:
@@ -166,7 +166,6 @@ search:
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
 comment:
     type: disqus
-    # Disqus shortname
     shortname: ''
 # Donate plugin configurations
 # https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Donation/
@@ -229,36 +228,27 @@ widgets:
         position: left
         type: profile
         # Author name
-        author: Your name
+        author: RustBoy
         # Author title
-        author_title: Your title
+        author_title: Rust Learner
         # Author's current location
-        location: Your location
+        location: ''
         # URL or path to the avatar image
-        avatar: 
+        avatar:
         # Whether show the rounded avatar image
-        avatar_rounded: false
+        avatar_rounded: true
         # Email address for the Gravatar
-        gravatar: 
+        gravatar:
         # URL or path for the follow button
-        follow_link: https://github.com/ppoffice
+        follow_link: https://github.com/Xramas
         # Links to be shown on the bottom of the profile widget
         social_links:
             Github:
                 icon: fab fa-github
-                url: https://github.com/ppoffice
-            Facebook:
-                icon: fab fa-facebook
-                url: https://facebook.com
-            Twitter:
-                icon: fab fa-twitter
-                url: https://twitter.com
-            Dribbble:
-                icon: fab fa-dribbble
-                url: https://dribbble.com
+                url: https://github.com/Xramas
             RSS:
                 icon: fas fa-rss
-                url: /
+                url: /atom.xml
     # Table of contents widget configurations
     -
         # Where should the widget be placed, left sidebar or right sidebar

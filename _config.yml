@@ -25,16 +25,16 @@ titlecase: false
 external_link:
   enable: true
   field: site
-  exclude: ''
+  exclude: 'rustboy.de'
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
-future: true
+future: false
 syntax_highlighter: highlight.js
 highlight:
   line_number: true
-  auto_detect: false
+  auto_detect: true
   tab_replace: ''
   wrap: true
   hljs: false
@@ -49,7 +49,7 @@ index_generator:
 default_category: uncategorized
 category_map: null
 tag_map: null
-meta_generator: true
+meta_generator: false
 date_format: YYYY-MM-DD
 time_format: HH:mm:ss
 updated_option: mtime
@@ -60,7 +60,18 @@ exclude: null
 ignore: null
 theme: icarus
 deploy:
-  type: ''
+  type: git
+  repo: https://github.com/Xramas/RustBoy.git
+  branch: gh-pages
+
+# SEO
+sitemap:
+  path: sitemap.xml
+feed:
+  enable: true
+  type: atom
+  path: atom.xml
+  limit: 20
 
 # hexo-neat 自动静态资源压缩配置
 neat_enable: true
@@ -68,7 +79,7 @@ neat_enable: true
 # HTML 压缩
 neat_html:
   enable: true
-  exclude:
+  exclude: []
 
 # CSS 压缩
 neat_css:
@@ -80,7 +91,7 @@ neat_css:
 neat_js:
   enable: true
   mangle: true
-  compress:
+  compress: true
   exclude:
     - '**/*.min.js'  # 排除已经压缩过的第三方 JS
 
