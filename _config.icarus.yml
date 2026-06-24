@@ -310,35 +310,6 @@ widgets:
         # 是否显示标签下的文章数
         show_count: true
 
-    # Google FeedBurner 邮件订阅小部件
-    -
-        position: left
-        type: subscribe_email
-        # 输入框下方的提示文字
-        description:
-        # Feedburner ID
-        feedburner_id: ''
-
-    # Google AdSense 广告小部件
-    -
-        position: left
-        type: adsense
-        # AdSense 客户端 ID
-        client_id: ''
-        # AdSense 广告单元 ID
-        slot_id: ''
-
-    # Follow.it 邮件订阅小部件
-    -
-        position: left
-        type: followit
-        # 输入框下方的提示文字
-        description:
-        # 订阅表单的提交 URL
-        action_url: ''
-        # Feed 认证验证码
-        verification_code: ''
-
 # --------------- 插件配置 ---------------
 # 参考：https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/
 plugins:
