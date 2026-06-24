@@ -8,12 +8,8 @@ class Footer extends Component {
             logoUrl,
             siteUrl,
             siteTitle,
-            siteYear,
-            author,
             links,
-            copyright,
-            showVisitorCounter,
-            visitorCounterTitle
+            copyright
         } = this.props;
 
         let footerLogo = '';
@@ -34,14 +30,6 @@ class Footer extends Component {
                         <a class="footer-logo is-block mb-2" href={siteUrl}>
                             {footerLogo}
                         </a>
-                        <p class="is-size-7">
-                            <span dangerouslySetInnerHTML={{ __html: `&copy; ${siteYear} ${author || siteTitle}` }}></span>
-                            &nbsp;&nbsp;Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>&nbsp;&&nbsp;
-                            <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a>
-                            {showVisitorCounter ? <br /> : null}
-                            {showVisitorCounter ? <span id="busuanzi_container_site_uv"
-                                dangerouslySetInnerHTML={{ __html: visitorCounterTitle }}></span> : null}
-                        </p>
                         {copyright ? <p class="is-size-7" dangerouslySetInnerHTML={{ __html: copyright }}></p> : null}
                     </div>
                     <div class="level-end">
@@ -64,8 +52,8 @@ class Footer extends Component {
 
 module.exports = cacheComponent(Footer, 'common.footer', props => {
     const { config, helper } = props;
-    const { url_for, _p, date } = helper;
-    const { logo, title, author, footer, plugins } = config;
+    const { url_for } = helper;
+    const { logo, title, footer } = config;
 
     const links = {};
     if (footer && footer.links) {
@@ -83,11 +71,7 @@ module.exports = cacheComponent(Footer, 'common.footer', props => {
         logoUrl: url_for(logo),
         siteUrl: url_for('/'),
         siteTitle: title,
-        siteYear: date(new Date(), 'YYYY'),
-        author,
         links,
-        copyright: footer?.copyright ?? '',
-        showVisitorCounter: plugins && plugins.busuanzi === true,
-        visitorCounterTitle: _p('plugin.visitor_count', '<span id="busuanzi_value_site_uv">0</span>')
+        copyright: footer?.copyright ?? ''
     };
 });
