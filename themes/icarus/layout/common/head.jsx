@@ -164,7 +164,9 @@ module.exports = class extends Component {
 
             {canonical_url ? <link rel="canonical" href={canonical_url} /> : null}
             {rss ? <link rel="alternate" href={url_for(rss)} title={config.title} type="application/atom+xml" /> : null}
-            {favicon ? <link rel="icon" href={url_for(favicon)} /> : null}
+            <link rel="mask-icon" href={url_for('/img/mask-icon.svg')} color="#000000" />
+            <link rel="alternate icon" type="image/png" href={url_for('/img/favicon.png')} />
+            <link rel="icon" type="image/svg+xml" href={url_for('/img/favicon.svg')} />
             <link rel="stylesheet" href={iconcdn()} />
             {hlTheme ? <link data-pjax rel="stylesheet" href={cdn('highlight.js', '11.7.0', 'styles/' + hlTheme + '.css')} /> : null}
             <link rel="stylesheet" href={fontCssUrl[variant]} />
