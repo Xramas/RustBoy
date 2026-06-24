@@ -174,31 +174,6 @@ feed:
     # 最多包含文章数
     limit: 20
 
-# --------------- hexo-neat 静态资源压缩 ---------------
-
-# 是否启用 hexo-neat 自动压缩
-neat_enable: true
-
-# HTML 压缩设置
-neat_html:
-    enable: true
-    # 排除的文件模式
-    exclude: []
-
-# CSS 压缩设置
-neat_css:
-    enable: true
-    exclude:
-        # 排除已压缩的第三方 CSS
-        - '**/*.min.css'
-
-# JS 压缩设置
-neat_js:
-    enable: true
-    # 是否混淆变量名
-    mangle: true
-    # 是否压缩代码
-    compress: true
-    exclude:
-        # 排除已压缩的第三方 JS
-        - '**/*.min.js'
+# --------------- 静态资源压缩 ---------------
+# 压缩由 Cloudflare Pages 的 Auto Minify 功能处理（HTML/CSS/JS）
+# 在 Cloudflare Dashboard > Speed > Optimization > Content Optimization 中启用
