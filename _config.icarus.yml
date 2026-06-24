@@ -260,6 +260,18 @@ plugins:
     # 是否显示"返回顶部"按钮
     back_to_top: true
 
+    # Google Analytics 配置
+    # 参考：https://analytics.google.com
+    google_analytics:
+        # Google Analytics 跟踪 ID（如 G-XXXXXXXXXX）
+        tracking_id:
+
+    # Bing 站长工具配置
+    # 参考：https://www.bing.com/webmaster
+    bing_webmaster:
+        # Bing 站长工具验证 meta 标签中的 tracking ID
+        tracking_id:
+
     # 不蒜子网站/页面访问计数器
     # 参考：https://busuanzi.ibruce.info
     busuanzi: false
