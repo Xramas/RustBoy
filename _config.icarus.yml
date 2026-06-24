@@ -19,9 +19,9 @@ head:
     # 参考：https://developer.mozilla.org/en-US/docs/Web/Manifest
     manifest:
         # Web 应用名称（默认使用站点标题）
-        name:
+        name: RustBoy
         # 空间不足时显示的简短名称
-        short_name:
+        short_name: RustBoy
         # 应用启动 URL
         start_url:
         # 应用默认主题颜色
